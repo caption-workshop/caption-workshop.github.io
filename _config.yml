@@ -4,3 +4,27 @@ show_downloads: true
 header: assets/images/CaPTion_logo.png
 google_analytics:
 theme: jekyll-theme-cayman
+
+# Set default header image
+header: yes
+header_sm: assets/images/CaPTion_logo.png
+header_med: assets/images/CaPTion_logo.png
+header_large: assets/images/CaPTion_logo.png
+header_xl: assets/images/CaPTion_logo.png
+
+## Thumbnailer taken from https://github.com/chrisanthropic/jekyll-minimagick
+
+# # Autogenerate thumbs for comics
+# mini_magick:
+
+# #Create Thumbs for the Archive Page
+#     thumbnail:
+#       source: images/comics/
+#       destination: /images/comics/thumbs
+#       resize: "182x280^"
+
+# #Autogenerate smaller size for small screens       
+#     small:
+#       source: images/comics/
+#       destination: /images/comics/small
+#       resize: "350x535^"
