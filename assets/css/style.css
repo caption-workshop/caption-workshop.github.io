@@ -253,7 +253,7 @@ td, th { padding: 0; }
 
 * { box-sizing: border-box; }
 
-body { padding: 0; margin: 0; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #606c71; }
+body { padding: 1; margin: 1; font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; color: #606c71; }
 
 #skip-to-content { height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px; }
 
@@ -267,7 +267,7 @@ a:hover { text-decoration: underline; }
 
 .btn:hover { color: rgba(255, 255, 255, 0.8); text-decoration: none; background-color: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.3); }
 
-.btn + .btn { margin-left: 0rem; }
+.btn + .btn { margin-left: 1rem; }
 
 @media screen and (min-width: 64em) { .btn { padding: 0.75rem 1rem; } }
 
@@ -283,15 +283,15 @@ a:hover { text-decoration: underline; }
 
 @media screen and (max-width: 42em) { .page-header { padding: 1rem 1rem; } }
 
-.project-name { margin-top: 1rem; margin-bottom: 2rem; }
+.project-name { margin-top: 0rem; margin-bottom: 2rem; }
 
 @media screen and (min-width: 64em) { .project-name { font-size: 4.25rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) { .project-name { font-size: 2.25rem; } }
 
-@media screen and (max-width: 40em) { .project-name { font-size: 1.75rem; } }
+@media screen and (max-width: 42em) { .project-name { font-size: 1.75rem; } }
 
-.project-tagline { margin-top: 5.5rem; margin-bottom: 0rem; font-weight: normal; opacity: 0.7; }
+.project-tagline { margin-top: 5.5rem; margin-bottom: 1rem; font-weight: normal; opacity: 0.7; }
 
 @media screen and (min-width: 64em) { .project-tagline { font-size: 1.25rem; } }
 
