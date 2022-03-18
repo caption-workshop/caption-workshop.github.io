@@ -6,6 +6,9 @@ google_analytics:
 theme: jekyll-theme-cayman
 header: assets/images/caption.jpg
 
+plugins:
+  - jekyll-gist
+
 # Set default header image
 # header: yes
 # header_sm: assets/images/CaPTion_logo.png

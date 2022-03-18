@@ -277,6 +277,18 @@ a:hover { text-decoration: underline; }
 
 .page-header {color:  #fff; text-align: center; background-color:  #2e478b; background-image: url(https://raw.githubusercontent.com/caption-workshop/caption-workshop.github.io/main/assets/images/caption-logo-2.png); background-repeat: no-repeat;  background-size: 450px 150px; background-position: center;}
 
+#.page-header {text-align: left; background-image: url(./assets/miccai2022-logo.png); background-repeat: no-repeat;  background-size: 450px 150px; #background-position: center;}
+
+#hp  {
+float: left;    
+ margin: 0 15px 0 0;
+}
+
+#hp1  {
+float: right;    
+ margin: 0 15px 0 0;
+}
+
 @media screen and (min-width: 64em) {.page-header { padding: 1rem 1rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) { .page-header { padding: 1rem 4rem; } }
@@ -309,7 +321,7 @@ a:hover { text-decoration: underline; }
 
 @media screen and (max-width: 42em) { .main-content { padding: 2rem 1rem; font-size: 1rem; } }
 
-.main-content kbd { background-color: #fafbfc; border: 1px solid #c6cbd1; border-bottom-color: #959da5; border-radius: 3px; box-shadow: inset 0 -1px 0 #959da5; color: #444d56; display: inline-block; font-size: 11px; line-height: 10px; padding: 3px 5px; vertical-align: middle; }
+.main-content kbd {background-color: #fafbfc; border: 1px solid #c6cbd1; border-bottom-color: #959da5; border-radius: 3px; box-shadow: inset 0 -1px 0 #959da5; color: #444d56; display: inline-block; font-size: 11px; line-height: 10px; padding: 3px 5px; vertical-align: middle; }
 
 .main-content img { max-width: 100%; }
 
@@ -345,7 +357,7 @@ a:hover { text-decoration: underline; }
 
 .main-content table th { font-weight: bold; }
 
-.main-content table th, .main-content table td { padding: 0.5rem 1rem; border: 1px solid #FFFFFF; }
+.main-content table th, .main-content table td { padding: 0.05rem 1rem; border: 2px solid #FFFFFF; }
 
 .main-content dl { padding: 0; }
 
@@ -353,7 +365,7 @@ a:hover { text-decoration: underline; }
 
 .main-content dl dd { padding: 0; margin-bottom: 1rem; }
 
-.main-content hr { height: 2px; padding: 0; margin: 1rem 0; background-color: #eff0f1; border: 0; }
+.main-content hr { height: 2px; padding: 1; margin: 1rem 0; background-color: #eff0f1; border: 0; }
 
 .site-footer { padding-top: 2rem; margin-top: 2rem; border-top: solid 1px #eff0f1; }
 
