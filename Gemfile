@@ -2,4 +2,7 @@
 
 source "https://rubygems.org"
 
+gem "jekyll-gist"
+gem "webrick"
+
 gemspec
