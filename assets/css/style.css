@@ -56,6 +56,15 @@ sub { bottom: -0.25em; }
 /** Remove border when inside `a` element in IE 8/9/10. */
 img { border: 0; }
 
+.wrapper {
+    padding: 0 px;
+  }
+
+img {
+    display: inline-block;
+    margin: 25px 10px; /* Change this to fit all images */
+  }
+
 /** Correct overflow not hidden in IE 9/10/11. */
 svg:not(:root) { overflow: hidden; }
 
@@ -123,9 +132,9 @@ optgroup { font-weight: bold; }
 /** Remove most spacing between table cells. */
 table { border-collapse: collapse; border-spacing: 0; }
 
-td, th { padding: 0; }
+td, th { padding: 10px; }
 
-.highlight table td { padding: 5px; }
+.highlight table td { padding: 15px; }
 
 .highlight table pre { margin: 0; }
 
