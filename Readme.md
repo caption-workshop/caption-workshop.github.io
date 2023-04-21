@@ -1,6 +1,6 @@
 ### Cancer Prevention through early detecTion (CaPTion)
 
-https://caption-workshop.github-2022.io (MICCAI 2022 - workshop)
+https://caption-workshop.github.io (MICCAI 2022 - workshop)
 
 ### Organisers:
 Sharib Ali, Fons van der Sommen, Maureen van Eijnatten, Bartek Papiez, Yueming Jin and Iris Kolenbrander
