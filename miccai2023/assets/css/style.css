@@ -268,7 +268,7 @@ body { padding: 1; margin: 1; font-family: "Open Sans", "Helvetica Neue", Helvet
 
 #skip-to-content:focus { position: fixed; top: 10px; left: 10px; height: auto; width: auto; background: #e19447; outline: thick solid #e19447; }
 
-a { color: #1e6bb8; text-decoration: none; }
+a { color: #a32c50; text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
