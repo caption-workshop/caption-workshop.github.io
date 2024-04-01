@@ -40,7 +40,7 @@ dfn { font-style: italic; }
 h1 { font-size: 2em; margin: 0.67em 0; }
 
 /** Address styling not present in IE 8/9. */
-mark { background: #ff0; color: #8b2e44; }
+mark { background: #ff0; color: #c4c3c3; }
 
 /** Address inconsistent and variable font size in all browsers. */
 small { font-size: 80%; }
@@ -148,13 +148,13 @@ td, th { padding: 10px; }
 
 .highlight .c, .highlight .cd { color: #999988; font-style: italic; }
 
-.highlight .err { color: #a61717; background-color: #e3d2d2; }
+.highlight .err { color: #01e28c; background-color: #e3d2d2; }
 
 .highlight .gd { color: #000000; background-color: #ffdddd; }
 
 .highlight .ge { color: #000000; font-style: italic; }
 
-.highlight .gr { color: #aa0000; }
+.highlight .gr { color: #01e28c; }
 
 .highlight .gh { color: #999999; }
 
@@ -216,7 +216,7 @@ td, th { padding: 10px; }
 
 .highlight .s1 { color: #d14; }
 
-.highlight .ss { color: #990073; }
+.highlight .ss { color: #01e28c; }
 
 .highlight .s { color: #d14; }
 
@@ -232,13 +232,13 @@ td, th { padding: 10px; }
 
 .highlight .nd { color: #3c5d5d; font-weight: bold; }
 
-.highlight .ni { color: #800080; }
+.highlight .ni { color: #01e28c; }
 
-.highlight .ne { color: #990000; font-weight: bold; }
+.highlight .ne { color: #01e28c; font-weight: bold; }
 
-.highlight .nf { color: #990000; font-weight: bold; }
+.highlight .nf { color: #01e28c; font-weight: bold; }
 
-.highlight .nl { color: #990000; font-weight: bold; }
+.highlight .nl { color: #01e28c; font-weight: bold; }
 
 .highlight .nn { color: #555555; }
 
@@ -268,7 +268,7 @@ body { padding: 1; margin: 1; font-family: "Open Sans", "Helvetica Neue", Helvet
 
 #skip-to-content:focus { position: fixed; top: 10px; left: 10px; height: auto; width: auto; background: #e19447; outline: thick solid #e19447; }
 
-a { color: #a32c50; text-decoration: none; }
+a { color: #01e28c; text-decoration: none; }
 
 a:hover { text-decoration: underline; }
 
@@ -285,7 +285,7 @@ a:hover { text-decoration: underline; }
 @media screen and (max-width: 42em) { .btn { display: block; width: 100%; padding: 0.0rem; font-size: 0.9rem; } .btn + .btn { margin-top: 1rem; margin-left: 0; } }
 
 /* .page-header {color:  #fff; text-align: center; background-color:  #2e478b; background-image: url(https://raw.githubusercontent.com/caption-workshop/caption-workshop.github.io/main/assets/images/caption-logo-2.png); background-repeat: no-repeat;  background-size: 40% auto; background-position: center;} */
-.page-header {color:  #fff; text-align: center; background-color:  #a32c50; background-repeat: no-repeat;   background-position: center;}
+.page-header {color:  #fff; text-align: center; background-color:  #e2e2e2; background-repeat: no-repeat;   background-position: center;}
 
 #hp2  {
   float: left;    
