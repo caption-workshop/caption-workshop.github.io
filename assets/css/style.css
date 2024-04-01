@@ -300,7 +300,7 @@ a:hover { text-decoration: underline; }
 @media screen and (max-width: 42em) { .btn { display: block; width: 100%; padding: 0.0rem; font-size: 0.9rem; } .btn + .btn { margin-top: 1rem; margin-left: 0; } }
 
 /* .page-header {color:  #fff; text-align: center; background-color:  #2e478b; background-image: url(https://raw.githubusercontent.com/caption-workshop/caption-workshop.github.io/main/assets/images/caption-logo-2.png); background-repeat: no-repeat;  background-size: 40% auto; background-position: center;} */
-.page-header {color:  #fff; text-align: center; background-color:  rgba(90, 87, 87, 0.745); background-repeat: no-repeat;   background-position: center;}
+.page-header {color:  #e91010; text-align: center; background-color:  rgba(90, 87, 87, 0.745); background-repeat: no-repeat;   background-position: center;}
 
 #hp2  {
   float: left;    
