@@ -274,7 +274,7 @@ a:hover { text-decoration: underline; }
 
 .btn { display: inline-block; margin-bottom: 0.15rem; color: rgba(255, 255, 255, 0.9); background-color: rgba(40, 70, 40, 0.826))); border-color: rgba(40, 70, 40, 0.826); border-style: solid; border-width: 1px; border-radius: 0.3rem; transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
 
-.btn:hover { color: rgba(255, 255, 255, 0.8); text-decoration: none; background-color: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.3); }
+.btn:hover { color: rgba(255, 255, 255, 0.8); text-decoration: none; background-color: rgba(40, 70, 40, 0.826); border-color: rgba(40, 70, 40, 0.826); }
 
 .btn + .btn { margin-left: 0.15rem; }
 
@@ -285,7 +285,7 @@ a:hover { text-decoration: underline; }
 @media screen and (max-width: 42em) { .btn { display: block; width: 100%; padding: 0.0rem; font-size: 0.9rem; } .btn + .btn { margin-top: 1rem; margin-left: 0; } }
 
 /* .page-header {color:  #fff; text-align: center; background-color:  #2e478b; background-image: url(https://raw.githubusercontent.com/caption-workshop/caption-workshop.github.io/main/assets/images/caption-logo-2.png); background-repeat: no-repeat;  background-size: 40% auto; background-position: center;} */
-.page-header {color:  #fff; text-align: center; background-color:  #e2e2e2; background-repeat: no-repeat;   background-position: center;}
+.page-header {color:  #fff; text-align: center; background-color:  rgba(90, 87, 87, 0.745); background-repeat: no-repeat;   background-position: center;}
 
 #hp2  {
   float: left;    
@@ -314,7 +314,7 @@ float: right;
   display: table;
   clear: both;
 }
-@media screen and (min-width: 64em) {.page-header { padding: 0.25rem 1rem; } }
+@media screen and (min-width: 42em) {.page-header { padding: 0.25rem 1rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) { .page-header { padding: 0.5rem 1rem; } }
 
