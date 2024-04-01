@@ -148,13 +148,13 @@ td, th { padding: 10px; }
 
 .highlight .c, .highlight .cd { color: #999988; font-style: italic; }
 
-.highlight .err { color: #01e28c; background-color: #e3d2d2; }
+.highlight .err { color: #255e48; background-color: #e3d2d2; }
 
 .highlight .gd { color: #000000; background-color: #ffdddd; }
 
 .highlight .ge { color: #000000; font-style: italic; }
 
-.highlight .gr { color: #01e28c; }
+.highlight .gr { color: #255e48; }
 
 .highlight .gh { color: #999999; }
 
@@ -168,7 +168,7 @@ td, th { padding: 10px; }
 
 .highlight .gu { color: #aaaaaa; }
 
-.highlight .gt { color: #aa0000; }
+.highlight .gt { color: #255e48; }
 
 .highlight .kc { color: #000000; font-weight: bold; }
 
