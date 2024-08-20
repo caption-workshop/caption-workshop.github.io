@@ -3,7 +3,7 @@ description: MICCAI 2024 Workshop on "Cancer Prevention, detection, and interven
 show_downloads: true
 
 google_analytics:
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 header: assets/images/caption.jpg
 
 plugins:
