@@ -1,363 +1,534 @@
-<!-- <!DOCTYPE html>
-<html lang="en-US">
-<head>
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
-Begin Jekyll SEO tag v2.7.1 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CaPTion Workshop Poster</title>
+    <title>CaPTion Workshop @ MICCAI 2026</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         :root {
-            --primary-blue: #233b8a; /* Matched to MICCAI logo */
-            --secondary-blue: #1b63a9;
-            --accent-cyan: #00a8e8; /* Matched to MICCAI logo cyan */
-            --light-bg: #F4F7F6;
-            --text-dark: #2B2D42;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #d1d8e0;
-            display: flex;
-            justify-content: center;
-        }
-        .poster-container {
-            width: 1200px;
-            background-color: white;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            margin: 20px 0;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        /* UPDATED HEADER SECTION */
-        .header {
-            background-color: #eaf1f8; /* Soft light blue to match images */
-            padding: 30px 40px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border-bottom: 5px solid var(--primary-blue);
-        }
-        
-        /* Header Image Containers */
-        .header-img-left, .header-img-right {
-            width: 260px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .header-img-left img {
-            width: 100%;
-            height: auto;
-        }
-        .header-img-right img {
-            width: 90%;
-            height: auto;
+            --primary: #233b8a; /* Updated to match MICCAI logo */
+            --secondary: #00a8e8; /* Updated to match MICCAI cyan */
+            --accent: #0284c7;
+            --bg-light: #f8fafc;
+            --text-main: #334155;
+            --text-dark: #0f172a;
         }
 
-        /* Header Center Text */
-        .header-center {
-            text-align: center;
-            flex-grow: 1;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--text-main);
+            line-height: 1.6;
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 { color: var(--text-dark); margin-bottom: 1rem; }
+        a { color: var(--secondary); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--primary); }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 0 20px;
         }
-        .header-center h2 {
-            margin: 0;
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--text-dark);
-            text-transform: uppercase;
-        }
-        .header-center h1 {
-            margin: 5px 0 15px 0;
-            font-size: 26px;
-            color: var(--secondary-blue);
-        }
-        .caption-logo {
-            font-size: 65px;
-            font-weight: 900;
-            margin: 5px 0;
-            color: var(--primary-blue);
-            letter-spacing: 2px;
-        }
-        .caption-logo span {
-            color: var(--accent-cyan);
-        }
-        .header-info {
-            font-size: 18px;
-            font-weight: bold;
-            color: var(--primary-blue);
-            margin-top: 10px;
-            background: white;
-            display: inline-block;
-            padding: 8px 25px;
-            border-radius: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        /* MAIN CONTENT GRID */
-        .content {
-            display: grid;
-            grid-template-columns: 1.8fr 1.2fr;
-            gap: 30px;
-            padding: 40px;
-            background-color: white;
+
+        /* NAVBAR */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
-        /* LEFT COLUMN: THEMES */
-        .section-title {
-            color: var(--primary-blue);
-            border-bottom: 3px solid var(--accent-cyan);
-            padding-bottom: 10px;
-            margin-top: 0;
-            font-size: 24px;
-            text-transform: uppercase;
-        }
-        .theme-item {
-            background: var(--light-bg);
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            border-left: 5px solid var(--primary-blue);
-        }
-        .theme-item h3 {
-            margin: 0 0 8px 0;
-            color: var(--secondary-blue);
-            font-size: 18px;
-        }
-        .theme-item p {
-            margin: 0;
-            color: var(--text-dark);
-            font-size: 14.5px;
-            line-height: 1.5;
-        }
-
-        /* RIGHT COLUMN: DATES & INFO */
-        .sidebar-box {
-            background: var(--light-bg);
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            text-align: center;
-            border-top: 5px solid var(--accent-cyan);
-        }
-        .date-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: left;
-        }
-        .date-list li {
-            margin-bottom: 15px;
-            font-size: 15px;
-            border-bottom: 1px solid #dee2e6;
-            padding-bottom: 10px;
-        }
-        .date-list li:last-child {
-            border-bottom: none;
-        }
-        .date-list li strong {
-            display: block;
-            color: var(--primary-blue);
-            font-size: 16px;
-        }
-        .date-list li span {
-            color: #d90429; /* Red for emphasis on dates */
-            font-weight: bold;
-            font-size: 16px;
-        }
-        
-        /* QR CODES */
-        .qr-section {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .qr-box {
-            text-align: center;
-            font-size: 15px;
-            font-weight: bold;
-            color: var(--primary-blue);
-        }
-        .qr-placeholder {
-            width: 110px;
-            height: 110px;
-            background-color: white;
-            border: 2px dashed #aaa;
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            font-size: 12px;
-        }
-
-        /* FOOTER: TEAM */
-        .footer {
-            background-color: var(--light-bg);
-            padding: 30px 40px;
-            border-top: 1px solid #ddd;
-        }
-        .team-grid {
+        .navbar {
             display: flex;
             justify-content: space-between;
-            margin-top: 20px;
+            align-items: center;
+            padding: 15px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
         }
-        .team-member {
+
+        .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); }
+        .logo span { color: var(--secondary); }
+
+        .nav-links { display: flex; align-items: center; }
+        .nav-links a {
+            margin-left: 20px; font-weight: 600; color: var(--text-main); font-size: 0.95rem;
+        }
+        .nav-links a:hover { color: var(--secondary); }
+
+        /* HAMBURGER MENU ICON */
+        .menu-toggle {
+            display: none; font-size: 1.5rem; color: var(--primary); cursor: pointer;
+        }
+
+        /* =========================================
+           UPDATED HERO SECTION (WITH IMAGES)
+           ========================================= */
+        .hero {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e0eaf5 100%);
+            padding: 60px 20px;
+            border-bottom: 5px solid var(--primary);
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .hero-image {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+        }
+        .hero-image img {
+            width: 100%;
+            max-width: 260px;
+            height: auto;
+        }
+
+        .hero-text {
+            width: 50%;
             text-align: center;
-            width: 15%;
         }
-        .team-photo {
-            width: 90px;
-            height: 90px;
-            background-color: #ccc;
-            border-radius: 50%;
-            margin: 0 auto 10px auto;
-            border: 3px solid var(--accent-cyan);
-            object-fit: cover;
+
+        .hero-text .subtitle {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
         }
-        .team-names {
-            font-size: 15px;
-            color: var(--text-dark);
-            text-align: center;
-            line-height: 1.6;
+
+        .hero-text h1 {
+            color: var(--primary);
+            font-size: 2.2rem;
+            line-height: 1.3;
+            margin-bottom: 15px;
+        }
+
+        .caption-logo-large {
+            font-size: 4.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            letter-spacing: 2px;
             margin-bottom: 20px;
+            line-height: 1;
         }
-        .website-link {
-            text-align: center;
-            font-weight: bold;
-            color: var(--primary-blue);
-            font-size: 20px;
-            margin-top: 25px;
+        .caption-logo-large span { color: var(--secondary); }
+
+        .hero-text .meta {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 30px;
+            background: white;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,168,232,0.3);
+        }
+        .btn:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* GENERAL SECTIONS */
+        section { padding: 80px 0; }
+        .bg-light { background-color: var(--bg-light); }
+
+        .section-title {
+            text-align: center; font-size: 2.2rem; margin-bottom: 40px; position: relative;
+        }
+        .section-title::after {
+            content: ''; width: 60px; height: 4px; background-color: var(--secondary);
+            display: block; margin: 10px auto 0 auto; border-radius: 2px;
+        }
+
+        /* GRID LAYOUTS */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+
+        /* THEMES CARDS */
+        .themes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .theme-card {
+            background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary); transition: transform 0.3s;
+        }
+        .theme-card:hover { transform: translateY(-5px); }
+        .theme-card h3 { font-size: 1.1rem; color: var(--primary); margin-bottom: 10px;}
+
+        /* LISTS */
+        ul.custom-list { list-style: none; }
+        ul.custom-list li { position: relative; padding-left: 25px; margin-bottom: 10px; }
+        ul.custom-list li::before {
+            content: '\f0da'; font-family: 'FontAwesome'; position: absolute; left: 0; color: var(--secondary);
+        }
+
+        /* DATES TIMELINE */
+        .dates-box {
+            background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 600px; margin: 0 auto; border-top: 5px solid var(--primary);
+        }
+        .date-item { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #e2e8f0; }
+        .date-item:last-child { border-bottom: none; }
+        .date-item strong { color: var(--primary); }
+        .date-item span { font-weight: 600; color: #dc2626; text-align: right; }
+
+        /* ORGANIZERS GRID */
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 30px; text-align: center; }
+        .team-member img {
+            width: 130px; height: 130px; border-radius: 50%; object-fit: cover;
+            border: 4px solid var(--bg-light); box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px;
+        }
+        .team-member h3 { margin-bottom: 5px; font-size: 1.1rem; }
+        .team-member p { font-size: 0.9rem; color: #64748b; }
+
+        /* SUBMISSION INFO */
+        .submission-box { background: var(--primary); color: white; padding: 40px; border-radius: 10px; margin-top: 30px; }
+        .submission-box h2, .submission-box h3 { color: white; }
+        .submission-box a { color: #bae6fd; text-decoration: underline; }
+
+        /* FOOTER */
+        footer { background: var(--text-dark); color: white; padding: 50px 20px; text-align: center; }
+        footer a { color: var(--secondary); }
+
+        /* =========================================
+           MOBILE RESPONSIVENESS CHECKS
+           ========================================= */
+        @media (max-width: 900px) {
+            .hero-text h1 { font-size: 1.8rem; }
+            .caption-logo-large { font-size: 3.5rem; }
+        }
+
+        @media (max-width: 768px) {
+            /* Navigation */
+            .menu-toggle { display: block; }
+            .nav-links {
+                position: absolute; top: 100%; left: 0; width: 100%; background: white;
+                flex-direction: column; align-items: flex-start; box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out;
+            }
+            .nav-links.active { max-height: 400px; }
+            .nav-links a { margin: 0; padding: 15px 20px; width: 100%; border-bottom: 1px solid #f1f5f9; font-size: 1.1rem; }
+
+            /* Hero Section Stacked */
+            .hero { padding: 40px 15px; }
+            .hero-content { flex-direction: column; gap: 20px; }
+            .hero-image { width: 100%; max-width: 200px; margin: 0 auto; }
+            .hero-text { width: 100%; }
+            .hero-text h1 { font-size: 1.6rem; }
+            .caption-logo-large { font-size: 3rem; }
+            .hero-text .meta { font-size: 0.95rem; display: block; }
+            
+            /* General Elements */
+            section { padding: 50px 0; }
+            .section-title { font-size: 1.8rem; margin-bottom: 30px; }
+            .grid-2 { grid-template-columns: 1fr; gap: 30px; }
+            .dates-box { padding: 20px; }
+            .date-item { flex-direction: column; text-align: left; padding: 10px 0;}
+            .date-item span { text-align: left; margin-top: 5px; font-size: 0.95rem; }
+            .submission-box { padding: 25px 15px; }
+            .team-grid[style*="justify-content: center"] { flex-direction: column; gap: 30px; }
+            footer .grid-2 { text-align: center; gap: 20px; padding-bottom: 20px; }
         }
     </style>
 </head>
 <body>
 
-<div class="poster-container">
-    
-    <!-- UPDATED HEADER WITH YOUR IMAGES -->
-    <div class="header">
-        <!-- Left Image: MICCAI 2026 Logo -->
-        <div class="header-img-left">
-            <img src="miccai-logo.png" alt="MICCAI 2026 Strasbourg">
+    <!-- NAVIGATION -->
+    <header>
+        <div class="navbar">
+            <a href="#" class="logo">Ca<span>P</span>Tion</a>
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- Links -->
+            <div class="nav-links" id="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#themes" class="nav-item">Themes</a>
+                <a href="#dates" class="nav-item">Dates</a>
+                <a href="#submit" class="nav-item">Submit</a>
+                <a href="#team" class="nav-item">Team</a>
+                <a href="#past" class="nav-item">Past Editions</a>
+            </div>
         </div>
-        
-        <!-- Center Titles -->
-        <div class="header-center">
-            <h2>4th International MICCAI Workshop on</h2>
-            <h1>Cancer Prevention, Detection, and Intervention</h1>
-            <div class="caption-logo">Ca<span>P</span>Tion</div>
-            <div class="header-info">📍 Strasbourg, France &nbsp;|&nbsp; 📅 1st October 2026</div>
-        </div>
-        
-        <!-- Right Image: MRI Scanner -->
-        <div class="header-img-right">
-            <img src="mri-icon.png" alt="MRI Scanner Graphic">
+    </header>
+
+    <!-- HERO SECTION WITH LOGOS -->
+    <div class="hero">
+        <div class="hero-content">
+            <!-- Left Image: MICCAI -->
+            <div class="hero-image">
+                <img src="./assets/images/webpage/miccai2026-mobile-logo-france.png" alt="MICCAI 2026 Logo">
+            </div>
+
+            <!-- Center Text -->
+            <div class="hero-text">
+                <p class="subtitle">Fourth International Workshop @ MICCAI</p>
+                <h1>Cancer Prevention, Detection, and IntervenTion</h1>
+                <div class="caption-logo-large">Ca<span>P</span>Tion</div>
+                <div class="meta">
+                    <i class="fa-solid fa-calendar-days" style="color:var(--secondary)"></i> Oct 1st, 2026 &nbsp;|&nbsp; 
+                    <i class="fa-solid fa-location-dot" style="color:var(--secondary)"></i> Strasbourg, France
+                </div>
+                <br>
+                <a href="#submit" class="btn">Submit Your Paper</a>
+            </div>
+
+            <!-- Right Image: MRI -->
+            <div class="hero-image">
+                <img src="./assets/images/webpage/Caption2026_CT.jpg" alt="MRI Scanner Graphic">
+            </div>
         </div>
     </div>
 
-    <!-- Main Content -->
-    <div class="content">
-        <!-- Left Column: Themes -->
-        <div>
-            <h2 class="section-title">Workshop Themes</h2>
-            
-            <div class="theme-item">
-                <h3>1) Early Detection and Diagnosis of Cancer</h3>
-                <p>Learning algorithms for lesion detection in medical images, staging, risk assessment, prediction of cancer outcome (in terms of life expectancy, survivability, progression, treatment sensitivity).</p>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="container">
+        <h2 class="section-title">Workshop Description</h2>
+        <div class="grid-2">
+            <div>
+                <p style="margin-bottom: 15px;">While computational methods in medical imaging have enabled us to detect and assess cancerous tumors and assist in their treatment, early detection of cancer precursors provides us with an opportunity for its early treatment and prevention. The survival rate of cancer is still low, and largely depends on the affected organ and how early it is diagnosed.</p>
+                <p>The variable nature of the disease in different patients and the diverse imaging acquisition types involved for quantification of disease and treatment demands robust method designs. It is therefore critical to develop generalizable methods as part of a holistic early cancer detection ecosystem.</p>
             </div>
-
-            <div class="theme-item">
-                <h3>2) Image-Guided Intervention for Cancer Treatment</h3>
-                <p>Image fusion, multi-modal registration, detection, segmentation, and tracking, computer-guided interventions, augmented reality for tumor delineation and tumor resection.</p>
-            </div>
-
-            <div class="theme-item">
-                <h3>3) Real-World Data Exploration for Cancer Prediction</h3>
-                <p>Big (imaging) data analysis, multimodal data analysis using active, semi and self-supervised learning, model-agnostic meta-learning, federated learning (sparsely labeled, data privacy), large foundational models (LLMs), and continual learning.</p>
-            </div>
-
-            <div class="theme-item">
-                <h3>4) Cancer Biomarkers</h3>
-                <p>New predictive (visual) biomarker discovery in medical images, tumor data signatures, personalized cancer treatments, genomics and radiomics.</p>
-            </div>
-
-            <div class="theme-item">
-                <h3>5) Clinically Accepted Evaluation Methods</h3>
-                <p>Identifying new evaluation metrics or gold standards (e.g., compared to widely used Dice or IoU), sample size standardization, biases, uncertainty estimation, best practices for validation, image simulation and synthesis techniques in cancer research.</p>
+            <div>
+                <p>The workshop will invite researchers in the field of medical imaging around the central theme of data-driven cancer detection and treatment, and strives to address the challenges that are required to be overcome to translate computational methods to clinical practice through well designed, generalizable (robust), interpretable and clinically transferable methods.</p>
             </div>
         </div>
+    </section>
 
-        <!-- Right Column: Dates & Side Info -->
-        <div>
-            <div class="sidebar-box">
-                <h2 class="section-title" style="font-size: 20px;">Important Dates</h2>
-                <ul class="date-list">
-                    <li><strong>Submission Deadline</strong> <span>30th June 2026</span></li>
-                    <li><strong>Paper Decision Notification</strong> <span>15th July 2026</span></li>
-                    <li><strong>Camera Ready Submission</strong> <span>1st August 2026</span></li>
-                    <li><strong>Workshop @MICCAI</strong> <span>1st October 2026</span></li>
-                </ul>
+    <!-- THEMES SECTION -->
+    <section id="themes" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Workshop Themes</h2>
+            <div class="themes-grid">
+                <div class="theme-card">
+                    <h3>1. Early Detection & Diagnosis</h3>
+                    <p>Learning algorithms for lesion detection in medical images, staging, risk assessment, prediction of cancer outcome (life expectancy, survivability, progression, treatment sensitivity).</p>
+                </div>
+                <div class="theme-card">
+                    <h3>2. Image-Guided Intervention</h3>
+                    <p>Image fusion, multi-modal registration, detection, segmentation, and tracking, computer-guided interventions, augmented reality for tumor delineation and resection.</p>
+                </div>
+                <div class="theme-card">
+                    <h3>3. Real-World Data Exploration</h3>
+                    <p>Big imaging data analysis, multimodal data analysis using active, semi & self-supervised learning, model-agnostic meta-learning, federated learning, LLMs, and continual learning.</p>
+                </div>
+                <div class="theme-card">
+                    <h3>4. Cancer Biomarkers</h3>
+                    <p>New predictive visual biomarker discovery in medical images, tumor data signatures, personalized cancer treatments, genomics and radiomics.</p>
+                </div>
+                <div class="theme-card">
+                    <h3>5. Clinical Evaluation Methods</h3>
+                    <p>Identifying new evaluation metrics or gold standards, sample size standardization, biases, uncertainty estimation, and image simulation techniques.</p>
+                </div>
             </div>
 
-            <div class="sidebar-box">
-                <h2 class="section-title" style="font-size: 20px;">Event Highlights</h2>
-                <p style="font-size: 15px; text-align: left; line-height: 1.8;">
-                    🏆 <strong>Distinguished Keynote Speakers</strong><br>
-                    🎤 <strong>Oral Sessions</strong><br>
-                    📊 <strong>Interactive Poster Session</strong>
-                </p>
-                
-                <div class="qr-section">
-                    <div class="qr-box">
-                        More Info
-                        <div class="qr-placeholder">[Replace with QR]</div>
-                    </div>
-                    <div class="qr-box">
-                        OpenReview
-                        <div class="qr-placeholder">[Replace with QR]</div>
-                    </div>
+            <div class="grid-2" style="margin-top: 50px;">
+                <div>
+                    <h3 style="color: var(--primary);">Key Technical Themes</h3>
+                    <ul class="custom-list">
+                        <li>Learning algorithms & workflows (e.g., self-supervised, active learning, LLMs)</li>
+                        <li>Data and label efficiency (limited data, imbalance)</li>
+                        <li>Model robustness and generalisability (edge-AI, quantized models)</li>
+                        <li>Explainability, fairness and data privacy (federated learning)</li>
+                        <li>Multimodal and multi-instance learning</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary);">Call for Papers (Applications)</h3>
+                    <ul class="custom-list">
+                        <li><strong>Imaging Modalities:</strong> Optical, Endoscopy, OCT, Hyperspectral, CT/PET fusion, MRI, Ultrasound.</li>
+                        <li><strong>Clinical Apps:</strong> Early cancer detection, prognosis, tumor characterization, staging, longitudinal studies.</li>
+                        <li><strong>Domains:</strong> Surgical data science, digital histopathology, phenotypic tumor correlation.</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer: Organizing Team -->
-    <div class="footer">
-        <h2 class="section-title" style="text-align: center; border:none; margin-bottom: 10px;">Organizing Team</h2>
-        <p class="team-names">
-            <strong>Fons van der Sommen</strong> (TU/e Eindhoven) • <strong>Sharib Ali & Jiangbei Yue</strong> (University of Leeds) <br>
-            <strong>Bartek Papiez</strong> (University of Oxford) • <strong>Yueming Jin</strong> (National University of Singapore) • <strong>Noha Ghatwary</strong> (Arab Academy for Science, Technology, Egypt)
-        </p>
-        
-        <div class="team-grid">
-            <!-- You can replace the div with an actual image tag like: <img src="fons.jpg" class="team-photo"> -->
-            <div class="team-member"><div class="team-photo"></div></div>
-            <div class="team-member"><div class="team-photo"></div></div>
-            <div class="team-member"><div class="team-photo"></div></div>
-            <div class="team-member"><div class="team-photo"></div></div>
-            <div class="team-member"><div class="team-photo"></div></div>
-            <div class="team-member"><div class="team-photo"></div></div>
+    <!-- DATES SECTION -->
+    <section id="dates" class="container">
+        <h2 class="section-title">Important Dates</h2>
+        <div class="dates-box">
+            <div class="date-item">
+                <strong>Paper submission begins</strong>
+                <span>May 2nd, 2026</span>
+            </div>
+            <div class="date-item">
+                <strong>Submission deadline</strong>
+                <span>July 1st, 2026</span>
+            </div>
+            <div class="date-item">
+                <strong>Decision notification</strong>
+                <span>July 15th, 2026</span>
+            </div>
+            <div class="date-item">
+                <strong>Camera ready submission</strong>
+                <span>August 1st, 2026</span>
+            </div>
+            <div class="date-item" style="background: var(--bg-light); padding: 15px; border-radius: 8px;">
+                <strong>Workshop Day @ MICCAI</strong>
+                <span>October 1st, 2026</span>
+            </div>
         </div>
+    </section>
 
-        <div class="website-link">
-            🌐 https://caption-workshop.github.io/
+    <!-- SUBMISSION SECTION -->
+    <section id="submit" class="container">
+        <div class="submission-box">
+            <h2 style="text-align: center; margin-bottom: 30px;">Submission Guidelines</h2>
+            <div class="grid-2">
+                <div>
+                    <h3 style="color: white;"><i class="fa-solid fa-file-pdf" style="color:var(--secondary);"></i> Formatting</h3>
+                    <p>All papers should be formatted according to the <a href="https://www.springer.com/gp/computer-science/lncs/conference-proceedings-guidelines" target="_blank">Springer Lecture Notes in Computer Science (LNCS) templates</a>.</p>
+                    <p style="margin-top: 10px;">We recommend submission up to <strong>8-pages and 2-pages of references</strong> (same as the MICCAI main conference).</p>
+                </div>
+                <div>
+                    <h3 style="color: white;"><i class="fa-solid fa-user-secret" style="color:var(--secondary);"></i> Review Process</h3>
+                    <p>We adhere to a <strong>double-blind peer review process</strong>. Please follow the <a href="https://conferences.miccai.org/2026/en/PAPER-SUBMISSION-GUIDELINES.html" target="_blank">MICCAI 2026 anonymity guidelines</a> when preparing your initial submission.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2);">
+                <p style="margin-bottom: 10px; font-size: 1.1rem;"><strong>Submission Portal:</strong> <a href="https://openreview.net/group?id=MICCAI.org/2026/Workshop/CaPTion" target="_blank">OpenReview Website</a></p>
+                <p style="font-size: 0.9rem; color: #cbd5e1;"><em>Accepted papers will be published in a joint proceeding with the MICCAI 2026 conference via Springer LNCS.</em></p>
+            </div>
         </div>
-    </div>
-</div>
+    </section>
 
+    <!-- TEAM SECTION -->
+    <section id="team" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Organizing Committee</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="./assets/images/organisers/fons_420_600.jpg" alt="Fons van der Sommen" onerror="this.src='https://via.placeholder.com/150'">
+                    <h3>Fons van der Sommen</h3>
+                    <p>TU/e, Eindhoven</p>
+                </div>
+                <div class="team-member">
+                    <img src="./assets/images/organisers/sharib.jpg" alt="Sharib Ali" onerror="this.src='https://via.placeholder.com/150'">
+                    <h3>Sharib Ali</h3>
+                    <p>University of Leeds, UK</p>
+                </div>
+                <div class="team-member">
+                    <img src="./assets/images/organisers/Noha_Ghatwary.jpg" alt="Noha Ghatwary" onerror="this.src='https://via.placeholder.com/150'">
+                    <h3>Noha Ghatwary</h3>
+                    <p>AASTMT, Egypt</p>
+                </div>
+                <div class="team-member">
+                    <img src="./assets/images/organisers/bartek1.jpeg" alt="Bartek Papiez" onerror="this.src='https://via.placeholder.com/150'">
+                    <h3>Bartek Papiez</h3>
+                    <p>University of Oxford, UK</p>
+                </div>
+                <div class="team-member">
+                    <img src="./assets/images/organisers/yueming-2.jpg" alt="Yueming Jin" onerror="this.src='https://via.placeholder.com/150'">
+                    <h3>Yueming Jin</h3>
+                    <p>National Univ. of Singapore</p>
+                </div>
+                <div class="team-member">
+                    <img src="./assets/images/organisers/jianbei.jpg" alt="Jiangbei Yue" onerror="this.src='https://via.placeholder.com/150'">
+                    <h3>Jiangbei Yue</h3>
+                    <p>University of Leeds, UK</p>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 60px; font-size: 1.8rem;">Student Representatives</h2>
+            <div class="team-grid" style="justify-content: center; display: flex; gap: 50px;">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Raneem Toman">
+                    <h3>Raneem Toman</h3>
+                    <p>University of Leeds, UK</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Pedro Chavarrias Solano">
+                    <h3>Pedro Chavarrias Solano</h3>
+                    <p>University of Leeds, UK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="past">
+        <div class="container grid-2" style="text-align: left; border-bottom: 1px solid #334155; padding-bottom: 30px; margin-bottom: 20px;">
+            <div>
+                <h3 style="color: white; font-size: 1.5rem;">Ca<span>P</span>Tion Workshop</h3>
+                <p>Contact the team at: <br><a href="mailto:caption.miccai@gmail.com"><i class="fa-solid fa-envelope"></i> caption.miccai@gmail.com</a></p>
+            </div>
+            <div>
+                <h3 style="color: white;">Past Proceedings (Springer)</h3>
+                <ul style="list-style: none;">
+                    <li><a href="https://link.springer.com/book/10.1007/978-3-031-17979-2" target="_blank">CaPTion 2022 Proceeding</a></li>
+                    <li><a href="https://link.springer.com/book/10.1007/978-3-031-45350-2" target="_blank">CaPTion 2023 Proceeding</a></li>
+                    <li><a href="https://link.springer.com/book/10.1007/978-3-031-73376-5" target="_blank">CaPTion 2024 Proceeding</a></li>
+                </ul>
+            </div>
+        </div>
+        <p style="font-size: 0.9rem; color: #94a3b8;">&copy; 2026 CaPTion Workshop @ MICCAI. Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.</p>
+    </footer>
+
+    <!-- JAVASCRIPT FOR MOBILE MENU -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileMenu.querySelector('i');
+            if(navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.querySelector('i').classList.remove('fa-xmark');
+                mobileMenu.querySelector('i').classList.add('fa-bars');
+            });
+        });
+    </script>
 </body>
 </html>
