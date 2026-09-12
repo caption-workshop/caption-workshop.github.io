@@ -128,6 +128,66 @@
         }
         .highlight-box strong { font-size: 1.15rem; }
 
+        /* KEYNOTE SPEAKER */
+        .keynote-section {
+            background: linear-gradient(135deg, #eef6ff 0%, #f8fbff 55%, #edf9fd 100%);
+        }
+
+        .keynote-card {
+            max-width: 1050px; margin: 0 auto; background: white; border-radius: 18px;
+            overflow: hidden; border: 1px solid #dbeafe;
+            box-shadow: 0 18px 45px rgba(35, 59, 138, 0.12);
+        }
+
+        .keynote-profile {
+            display: grid; grid-template-columns: 260px minmax(0, 1fr); align-items: start;
+        }
+
+        .keynote-portrait {
+            padding: 42px 0 0 42px; position: relative;
+        }
+
+        .keynote-portrait::after {
+            display: none;
+        }
+
+        .keynote-portrait img {
+            width: 210px; height: auto; display: block; border-radius: 14px;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.16);
+        }
+
+        .keynote-content { padding: 42px 46px; }
+
+        .keynote-label, .talk-label {
+            color: var(--secondary); font-size: 0.8rem; font-weight: 800;
+            letter-spacing: 0.12em; text-transform: uppercase;
+        }
+
+        .keynote-content h3 {
+            color: var(--primary); font-size: 2rem; margin: 5px 0 4px;
+        }
+
+        .keynote-role {
+            color: #475569; font-weight: 600; margin-bottom: 22px;
+        }
+
+        .keynote-bio-heading, .keynote-talk h5 {
+            color: var(--text-dark); font-size: 0.95rem; margin: 0 0 10px;
+        }
+
+        .keynote-bio p, .keynote-abstract p { margin-bottom: 14px; }
+        .keynote-bio p:last-child, .keynote-abstract p:last-child { margin-bottom: 0; }
+
+        .keynote-talk {
+            margin: 0 46px 46px; padding: 24px 26px; background: #f8fafc;
+            border-left: 5px solid var(--secondary); border-radius: 0 10px 10px 0;
+        }
+
+        .keynote-talk h4 {
+            color: var(--primary); font-size: 1.25rem; line-height: 1.4;
+            margin: 6px 0 16px;
+        }
+
         /* THEMES CARDS */
         .themes-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
         .theme-card {
@@ -152,6 +212,153 @@
         .date-item:last-child { border-bottom: none; }
         .date-item strong { color: var(--primary); }
         .date-item span { font-weight: 600; color: #dc2626; text-align: right; }
+
+        /* TENTATIVE PROGRAMME */
+        .programme-section { background-color: var(--bg-light); }
+
+        .programme-intro {
+            max-width: 760px; margin: -18px auto 34px; text-align: center;
+            color: #64748b;
+        }
+
+        .programme-badge {
+            display: inline-block; margin-bottom: 10px; padding: 5px 13px;
+            border-radius: 999px; background: #dbeafe; color: var(--primary);
+            font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .programme-meta {
+            display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
+            max-width: 980px; margin: 0 auto 16px;
+        }
+
+        .programme-meta-card {
+            background: white; border: 1px solid #e2e8f0; border-radius: 10px;
+            padding: 18px 20px; box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+        }
+
+        .programme-meta-card strong {
+            display: block; margin-bottom: 4px; color: var(--primary); font-size: 0.85rem;
+            text-transform: uppercase; letter-spacing: 0.05em;
+        }
+
+        .programme-summary {
+            max-width: 980px; margin: 0 auto 24px; padding: 15px 20px;
+            border-radius: 10px; background: var(--primary); color: white;
+            text-align: center; font-weight: 600;
+        }
+
+        .programme-list {
+            max-width: 980px; margin: 0 auto; list-style: none;
+            display: grid; gap: 12px;
+        }
+
+        .programme-item {
+            display: grid; grid-template-columns: 125px 190px minmax(0, 1fr);
+            gap: 20px; align-items: center; padding: 18px 22px;
+            background: white; border: 1px solid #e2e8f0; border-left: 5px solid var(--primary);
+            border-radius: 10px; box-shadow: 0 3px 10px rgba(15, 23, 42, 0.04);
+        }
+
+        .programme-item.keynote-slot { border-left-color: var(--secondary); background: #f0f9ff; }
+        .programme-item.break-slot { border-left-color: #94a3b8; }
+
+        .programme-time {
+            color: var(--primary); font-size: 0.9rem; font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .programme-session h3 {
+            margin: 0; color: var(--text-dark); font-size: 1rem; line-height: 1.35;
+        }
+
+        .programme-details { color: #475569; font-size: 0.94rem; }
+
+        /* ACCEPTED PAPERS */
+        .accepted-intro {
+            max-width: 820px; margin: -18px auto 34px; text-align: center;
+            color: #64748b;
+        }
+
+        .accepted-total {
+            display: inline-flex; align-items: center; gap: 8px; margin-bottom: 12px;
+            padding: 7px 15px; border-radius: 999px; background: #e0f2fe;
+            color: var(--primary); font-size: 0.85rem; font-weight: 800;
+        }
+
+        .accepted-themes { max-width: 1050px; margin: 0 auto; display: grid; gap: 18px; }
+
+        .accepted-theme {
+            background: white; border: 1px solid #dbeafe; border-radius: 14px;
+            overflow: hidden; box-shadow: 0 5px 18px rgba(35, 59, 138, 0.07);
+        }
+
+        .accepted-theme summary {
+            display: flex; align-items: center; justify-content: space-between; gap: 20px;
+            padding: 22px 26px; background: #f8fafc; cursor: pointer; list-style: none;
+        }
+
+        .accepted-theme summary::-webkit-details-marker { display: none; }
+        .accepted-theme summary::after {
+            content: '+'; flex: 0 0 auto; color: var(--secondary);
+            font-size: 1.7rem; font-weight: 400; line-height: 1;
+        }
+        .accepted-theme[open] summary::after { content: '\2212'; }
+        .accepted-theme[open] summary { border-bottom: 1px solid #dbeafe; }
+
+        .theme-number {
+            display: block; margin-bottom: 4px; color: var(--secondary);
+            font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .accepted-theme summary h3 {
+            margin: 0; color: var(--primary); font-size: 1.25rem; line-height: 1.35;
+        }
+
+        .theme-paper-count {
+            flex: 0 0 auto; padding: 5px 11px; border-radius: 999px;
+            background: #dbeafe; color: var(--primary); font-size: 0.8rem; font-weight: 800;
+        }
+
+        .accepted-theme-body { padding: 24px 26px 28px; }
+
+        .theme-description {
+            margin-bottom: 24px; color: #475569; font-size: 0.95rem;
+            border-left: 3px solid var(--secondary); padding-left: 14px;
+        }
+
+        .paper-group + .paper-group { margin-top: 28px; }
+        .paper-group h4 {
+            margin-bottom: 14px; color: var(--text-dark); font-size: 1rem;
+        }
+
+        .paper-grid {
+            display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
+        }
+
+        .paper-card {
+            padding: 18px; border: 1px solid #e2e8f0; border-top: 4px solid #94a3b8;
+            border-radius: 10px; background: #ffffff;
+        }
+        .paper-card.oral-paper { border-top-color: var(--secondary); }
+
+        .paper-meta { display: flex; align-items: center; gap: 7px; margin-bottom: 10px; }
+        .paper-type, .paper-number {
+            display: inline-block; padding: 3px 8px; border-radius: 999px;
+            font-size: 0.7rem; font-weight: 800; letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .paper-type { background: #e2e8f0; color: #475569; }
+        .oral-paper .paper-type { background: #e0f2fe; color: #0369a1; }
+        .paper-number { background: #eef2ff; color: var(--primary); }
+
+        .paper-card h5 {
+            margin-bottom: 11px; color: var(--primary); font-size: 1rem; line-height: 1.45;
+        }
+        .paper-authors { margin-bottom: 8px; color: #334155; font-size: 0.88rem; }
+        .paper-affiliations { color: #64748b; font-size: 0.8rem; line-height: 1.5; }
 
         /* SUBMISSION INFO */
         .submission-box { background: var(--primary); color: white; padding: 40px; border-radius: 10px; margin-top: 30px; }
@@ -243,6 +450,7 @@
         @media (max-width: 900px) {
             .hero-text h1 { font-size: 1.8rem; }
             .caption-logo-large { font-size: 3.5rem; }
+            .nav-links a { margin-left: 8px; font-size: 0.8rem; }
         }
 
         @media (max-width: 768px) {
@@ -252,7 +460,7 @@
                 flex-direction: column; align-items: flex-start; box-shadow: 0 10px 10px rgba(0,0,0,0.1);
                 max-height: 0; overflow: hidden; transition: max-height 0.3s ease-in-out;
             }
-            .nav-links.active { max-height: 400px; }
+            .nav-links.active { max-height: calc(100vh - 64px); overflow-y: auto; }
             .nav-links a { margin: 0; padding: 15px 20px; width: 100%; border-bottom: 1px solid #f1f5f9; font-size: 1.1rem; }
 
             .hero { padding: 40px 15px; }
@@ -269,8 +477,23 @@
             .dates-box { padding: 20px; }
             .date-item { flex-direction: column; text-align: left; padding: 10px 0;}
             .date-item span { text-align: left; margin-top: 5px; font-size: 0.95rem; }
+            .programme-meta { grid-template-columns: 1fr; }
+            .programme-item { grid-template-columns: 1fr; gap: 6px; padding: 18px; }
+            .programme-time { white-space: normal; }
+            .accepted-theme summary { align-items: flex-start; padding: 19px 18px; gap: 10px; }
+            .accepted-theme summary h3 { font-size: 1.08rem; }
+            .theme-paper-count { display: none; }
+            .accepted-theme-body { padding: 20px 18px 22px; }
+            .paper-grid { grid-template-columns: 1fr; }
             .submission-box { padding: 25px 15px; }
             .team-grid[style*="justify-content: center"] { flex-direction: column; gap: 30px; }
+
+            .keynote-profile { grid-template-columns: 1fr; }
+            .keynote-portrait { padding: 30px 24px 0; }
+            .keynote-portrait img { width: 180px; margin: 0 auto; }
+            .keynote-content { padding: 30px 24px; }
+            .keynote-content h3 { font-size: 1.7rem; }
+            .keynote-talk { margin: 0 24px 30px; padding: 20px; }
             
             /* Slideshow mobile adjust */
             .mySlides img { height: 300px; }
@@ -293,8 +516,11 @@
             <!-- Links -->
             <div class="nav-links" id="nav-links">
                 <a href="#about" class="nav-item">About</a>
+                <a href="#keynote" class="nav-item">Keynote</a>
                 <a href="#themes" class="nav-item">Themes</a>
                 <a href="#dates" class="nav-item">Dates</a>
+                <a href="#programme" class="nav-item">Programme</a>
+                <a href="#papers" class="nav-item">Papers</a>
                 <a href="#submit" class="nav-item">Submit</a>
                 <a href="#team" class="nav-item">Team</a>
                 <a href="#gallery" class="nav-item">Gallery</a>
@@ -338,6 +564,41 @@
         <div class="highlight-box">
             <p><i class="fa-solid fa-bullhorn" style="color:var(--secondary); font-size:1.2rem; margin-right:10px;"></i> 
             <strong>New this year:</strong> We will be including an exciting panel discussion on <em>"Tackling medical imaging challenges in early detection, prevention and treatment of cancer."</em></p>
+        </div>
+    </section>
+
+    <!-- KEYNOTE SPEAKER SECTION -->
+    <section id="keynote" class="keynote-section" aria-labelledby="keynote-heading">
+        <div class="container">
+            <h2 class="section-title" id="keynote-heading">Keynote Speaker</h2>
+            <article class="keynote-card">
+                <div class="keynote-profile">
+                    <div class="keynote-portrait">
+                        <img src="./KeynoteSpeaker/kostas%20marias.png" alt="Professor Kostas Marias, CaPTion 2026 keynote speaker" width="914" height="1117" loading="lazy">
+                    </div>
+                    <div class="keynote-content">
+                        <p class="keynote-label">CaPTion 2026 Keynote</p>
+                        <h3>Kostas Marias, PhD</h3>
+                        <p class="keynote-role">Professor of Medical Image Processing, Hellenic Mediterranean University</p>
+
+                        <div class="keynote-bio">
+                            <h4 class="keynote-bio-heading">Biography</h4>
+                            <p>Kostas Marias, PhD, is Professor of Medical Image Processing in the Department of Electrical and Computer Engineering at the Hellenic Mediterranean University (HMU), Dean of the HMU School of Engineering, and Head of the Computational BioMedicine Laboratory at the Institute of Computer Science, Foundation for Research and Technology&ndash;Hellas (FORTH-ICS). He received his PhD in Medical Image Analysis and Medical Physics from UCL&rsquo;s Royal Free and University College Medical School, in collaboration with the University of Oxford, where he subsequently worked as a Research Assistant. In 2026, he was appointed Visiting Professor and Distinguished International Scholar &ldquo;Chiara Fama&rdquo; at the University of Torino.</p>
+                            <p>Professor Marias has coordinated major European projects in cancer modelling and personalised medicine, including ContraCancrum and TUMOR, and has led or contributed to numerous international initiatives in medical imaging, biomedical informatics, and AI for healthcare. A Senior Member of IEEE, he has authored or co-authored more than 350 publications spanning medical image processing, image-based modelling, radiomics, and deep learning for cancer. He serves as Section Editor-in-Chief for Medical Imaging at the Journal of Imaging and is co-founder of SYNTHAINA.AI, a company specialising in synthetic data generation for AI.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="keynote-talk">
+                    <p class="talk-label"><i class="fa-solid fa-microphone-lines" aria-hidden="true"></i> Keynote Talk</p>
+                    <h4>Linking Medical Imaging to Cancer Biology Through AI: From Detection to Clinical Translation</h4>
+                    <div class="keynote-abstract">
+                        <h5>Talk Abstract</h5>
+                        <p>Artificial intelligence in medical imaging has achieved remarkable performance in detecting, segmenting, and assessing tumors. Yet cancer is not a single imaging target, but a heterogeneous and evolving biological system. Because precision oncology increasingly relies on molecular profiling to classify tumors and guide treatment, medical imaging AI must progress beyond tumor detection toward revealing clinically relevant aspects of cancer biology. Rather than replacing pathology or genomic testing, AI-enabled imaging can complement them by providing a noninvasive, whole-tumor, and longitudinal view of cancer from detection and biological characterization to treatment selection and clinical translation.</p>
+                        <p>This talk will explore how quantitative imaging, radiomics, deep learning, and multimodal integration can link imaging phenotypes with tumor biology. Examples from our research include multiparametric breast MRI for characterizing tumor heterogeneity, vascular organization, molecular phenotypes, and treatment response; lung CT for the noninvasive prediction of molecular characteristics, including EGFR and KRAS mutation status; and multiparametric brain MRI for predicting IDH1 mutation status in gliomas. Clinical translation, however, requires more than promising predictive performance. Imaging&ndash;biology associations must remain reliable across scanners, acquisition protocols, institutions, and patient populations. Achieving this requires biologically motivated, robust, interpretable, and externally validated AI.</p>
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -401,6 +662,393 @@
             <div class="date-item"><strong>Camera ready submission</strong><span>August 1st, 2026</span></div>
             <div class="date-item" style="background: var(--bg-light); padding: 15px; border-radius: 8px;">
                 <strong>Workshop Day @ MICCAI</strong><span>October 1st, 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTATIVE PROGRAMME SECTION -->
+    <section id="programme" class="programme-section" aria-labelledby="programme-heading">
+        <div class="container">
+            <h2 class="section-title" id="programme-heading">Tentative Programme</h2>
+            <div class="programme-intro">
+                <span class="programme-badge">Subject to change</span>
+                <p>Thursday afternoon at MICCAI 2026, bringing together keynote insights, rapid research pitches, oral presentations, and poster discussion.</p>
+            </div>
+
+            <div class="programme-meta">
+                <div class="programme-meta-card">
+                    <strong><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Date</strong>
+                    <span>Thursday, 1st of October 2026</span>
+                </div>
+                <div class="programme-meta-card">
+                    <strong><i class="fa-solid fa-clock" aria-hidden="true"></i> Time</strong>
+                    <span>13:30 &ndash; 18:00 (afternoon, half day)</span>
+                </div>
+                <div class="programme-meta-card">
+                    <strong><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Venue</strong>
+                    <span>Strasbourg, France &mdash; held in conjunction with MICCAI 2026</span>
+                </div>
+                <div class="programme-meta-card">
+                    <strong><i class="fa-solid fa-door-open" aria-hidden="true"></i> Room Name (Floor)</strong>
+                    <span>Boston (U)</span>
+                </div>
+            </div>
+
+            <p class="programme-summary">30 accepted papers &middot; 8 oral presentations &middot; 30 posters (all accepted papers present a poster)</p>
+
+            <ol class="programme-list" aria-label="Tentative workshop schedule">
+                <li class="programme-item">
+                    <div class="programme-time">13:35 &ndash; 13:45</div>
+                    <div class="programme-session"><h3>Opening</h3></div>
+                    <p class="programme-details">Welcome, introduction and objectives of the CaPTion workshop &mdash; CaPTion 2026 Organisers</p>
+                </li>
+                <li class="programme-item keynote-slot">
+                    <div class="programme-time">13:45 &ndash; 14:30</div>
+                    <div class="programme-session"><h3>Keynote Lecture</h3></div>
+                    <p class="programme-details">Invited talk (45 min incl. Q&amp;A)</p>
+                </li>
+                <li class="programme-item">
+                    <div class="programme-time">14:30 &ndash; 15:15</div>
+                    <div class="programme-session"><h3>Poster Pitch &mdash; Part 1</h3></div>
+                    <p class="programme-details">Themes I, II &amp; III &mdash; 14 pitches &times; 3 min (~42 mins &ndash; buffer 3 mins)</p>
+                </li>
+                <li class="programme-item break-slot">
+                    <div class="programme-time">15:15 &ndash; 16:15</div>
+                    <div class="programme-session"><h3>Coffee Break &amp; Poster Session</h3></div>
+                    <p class="programme-details">All 30 accepted papers present a poster</p>
+                </li>
+                <li class="programme-item">
+                    <div class="programme-time">16:15 &ndash; 16:45</div>
+                    <div class="programme-session"><h3>Poster Pitch &mdash; Part 2</h3></div>
+                    <p class="programme-details">Themes IV &amp; V &mdash; 8 pitches &times; 3 min (~30 mins &ndash; buffer 6 mins)</p>
+                </li>
+                <li class="programme-item">
+                    <div class="programme-time">16:45 &ndash; 17:15</div>
+                    <div class="programme-session"><h3>Oral Session I</h3></div>
+                    <p class="programme-details">Themes I &amp; II &mdash; 4 talks &times; 7 min (5 min + 2 min Q&amp;A)</p>
+                </li>
+                <li class="programme-item">
+                    <div class="programme-time">17:15 &ndash; 17:45</div>
+                    <div class="programme-session"><h3>Oral Session II</h3></div>
+                    <p class="programme-details">Themes III &amp; IV &mdash; 4 talks &times; 7 min (5 min + 2 min Q&amp;A)</p>
+                </li>
+                <li class="programme-item">
+                    <div class="programme-time">17:45 &ndash; 18:00</div>
+                    <div class="programme-session"><h3>Closing</h3></div>
+                    <p class="programme-details">Best paper award, closing remarks &amp; outlook to CaPTion&rsquo;2027</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ACCEPTED PAPERS SECTION -->
+    <section id="papers" aria-labelledby="papers-heading">
+        <div class="container">
+            <h2 class="section-title" id="papers-heading">Accepted Papers</h2>
+            <div class="accepted-intro">
+                <div class="accepted-total"><i class="fa-solid fa-file-circle-check" aria-hidden="true"></i> 30 accepted papers</div>
+                <p>All accepted papers are grouped below by theme. Every paper will be presented during the Coffee Break &amp; Poster Session (15:15 &ndash; 16:15); papers marked <strong>Oral</strong> will additionally give a talk.</p>
+            </div>
+
+            <div class="accepted-themes">
+                <details class="accepted-theme" open>
+                    <summary>
+                        <div>
+                            <span class="theme-number">Theme I</span>
+                            <h3>Detection, Segmentation and Staging in Cancer Imaging</h3>
+                        </div>
+                        <span class="theme-paper-count">8 papers</span>
+                    </summary>
+                    <div class="accepted-theme-body">
+                        <p class="theme-description">Lesion detection, localisation and delineation across CT, MRI, PET/CT and endoscopy, including multi-organ and longitudinal settings and CT-based tumour staging.</p>
+
+                        <div class="paper-group">
+                            <h4>Oral presentation</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card oral-paper" data-paper-id="25">
+                                    <div class="paper-meta"><span class="paper-type">Oral</span><span class="paper-number">#25</span></div>
+                                    <h5>SLN-Net: A Dual-Sequence MRI Network for Detecting Small Lymph Nodes in Gynecologic Malignancies</h5>
+                                    <p class="paper-authors">Xu, Chenchen; Lu, Zhiyi; Wang, Haotian; Chen, Yabin; Yao, Jun; Huang, Minghao; Fengying, Qin; Liu, Guanyu; Yu, Tianwei; Wang, Yurui; Deng, Renfu; Yuan, Junhui; Wen, Feng; Wang, Huilan; Wu, Jiesheng; Wang, Guili; Dong, Yue; Wang, Xin</p>
+                                    <p class="paper-affiliations">The Chinese University of Hong Kong, HK; Anhui Normal University, CN; Shenzhen Bay Laboratory, CN; Liaoning Cancer Hospital &amp; Institute, CN</p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="paper-group">
+                            <h4>Posters</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card" data-paper-id="27">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#27</span></div>
+                                    <h5>A Unified Multi-Organ Framework for Universal Lesion Detection, Segmentation and Longitudinal Tracking in CT Imaging</h5>
+                                    <p class="paper-authors">Debs, Noelie; Loizillon, Sophie; Ali, Omar; V&eacute;til, Rebeca; B&ocirc;ne, Alexandre; Roh&eacute;, Marc-Michel</p>
+                                    <p class="paper-affiliations">Guerbet Research, Villepinte, FR</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="32">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#32</span></div>
+                                    <h5>L-Spot: Slice-Aware Consensus for Hepatocellular Carcinoma Localisation in Contrast-Enhanced CT</h5>
+                                    <p class="paper-authors">Kampel, Julia Rebecca; Singh, Tripti; Akram, Farhan; Jegiraj, Anne Christina Melissa; Bommaraveni, Shriya; Morris, Byron John; Tiwari, Akshat; Deshpande, Sheetal Santosh; Shahabuddin, Khawaja; Puig, Domenec; SINGH, VIVEK KUMAR</p>
+                                    <p class="paper-affiliations">Barts Cancer Institute, Queen Mary University of London, UK; Universitat Rovira i Virgili, ES; Erasmus MC, NL; Queen's University Belfast, UK</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="39">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#39</span></div>
+                                    <h5>Probability-Based Lesion-Aware FN/FP Loss for Whole-Body PET/CT Tumor Segmentation</h5>
+                                    <p class="paper-authors">mohebi, mobin; Mathilde, MASSE; Alexandra, FERRAN; Zuluaga, Maria A; HUMBERT, Olivier</p>
+                                    <p class="paper-affiliations">Centre Antoine Lacassagne, Nice, FR; Universit&eacute; C&ocirc;te d'Azur (iBV), FR; EURECOM, FR</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="24">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#24</span></div>
+                                    <h5>When Two Tracers Disagree: An Investigation of Multimodal Fusion for Clinical PET/CT Segmentation</h5>
+                                    <p class="paper-authors">Johnson, Jack A.; Papiez, Bartlomiej</p>
+                                    <p class="paper-affiliations">University of Oxford, UK</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="37">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#37</span></div>
+                                    <h5>Why Background is Important: Virtual Lesion Excision for Detecting Radiologically &ldquo;Invisible&rdquo; Prostate Cancer</h5>
+                                    <p class="paper-authors">Talukdar, Maruf; Wang, Yipei; Thorley, Natasha; Huang, Shiqi; Kasivisvanathan, Veeru; Punwani, Shonit; Emberton, Mark; Hu, Yipeng</p>
+                                    <p class="paper-affiliations">University College London, UK</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="26">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#26</span></div>
+                                    <h5>Deep Learning-Based T4 Colorectal Cancer Staging from Preoperative CT Scans</h5>
+                                    <p class="paper-authors">Lattuada, Agust&iacute;n Ortiz; Richard, Antoine T.; Villeneuve, Laurent; Sylvain, Gouttard; Rousset, Pascal; Kepenekian, Vahan; Ladjal, Hamid</p>
+                                    <p class="paper-affiliations">Centrale Lille / Universit&eacute; de Lille, FR; Universit&eacute; Claude Bernard Lyon 1, FR; Hospices Civils de Lyon, FR</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="31">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#31</span></div>
+                                    <h5>Domain-Specific Clinically-Grounded Multi-Task Learning for Interpretable Early Colorectal Cancer Recognition</h5>
+                                    <p class="paper-authors">Croughs, Anieke; Pavelkin, Roman; Adams, Miranda; Schreuder, Ramon-Michel; Thijssen, Ayla; Schoon, Erik; der Sommen, Fons van</p>
+                                    <p class="paper-affiliations">Maastricht University, NL; Eindhoven University of Technology, NL; Catharina Hospital, NL</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accepted-theme" open>
+                    <summary>
+                        <div>
+                            <span class="theme-number">Theme II</span>
+                            <h3>Representation Learning: Foundation Models, Self-Supervision, Vision&ndash;Language and Generative Approaches</h3>
+                        </div>
+                        <span class="theme-paper-count">6 papers</span>
+                    </summary>
+                    <div class="accepted-theme-body">
+                        <p class="theme-description">Self-supervised and foundation-model pre-training, text-queryable and report-generating vision&ndash;language models, and generative synthesis of clinically faithful data.</p>
+
+                        <div class="paper-group">
+                            <h4>Oral presentations</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card oral-paper" data-paper-id="6">
+                                    <div class="paper-meta"><span class="paper-type">Oral</span><span class="paper-number">#6</span></div>
+                                    <h5>Efficient Self-Supervised Pre-Training in Endoscopy</h5>
+                                    <p class="paper-authors">Hallerfelt, Nils; Cherubini, Andrea; Biffi, Carlo; Tarroni, Giacomo</p>
+                                    <p class="paper-affiliations">City St George's, University of London, UK; Cosmo Intelligent Medical Devices, IE; Imperial College London, UK</p>
+                                </article>
+                                <article class="paper-card oral-paper" data-paper-id="35">
+                                    <div class="paper-meta"><span class="paper-type">Oral</span><span class="paper-number">#35</span></div>
+                                    <h5>FaithCLIP: Faithful Geometry-Derived Alignment for Text-Queryable Polyp Representations</h5>
+                                    <p class="paper-authors">Pramod, Anna; Toman, Raneem; Ali, Sharib</p>
+                                    <p class="paper-affiliations">University of Leeds, UK</p>
+                                </article>
+                                <article class="paper-card oral-paper" data-paper-id="18">
+                                    <div class="paper-meta"><span class="paper-type">Oral</span><span class="paper-number">#18</span></div>
+                                    <h5>SGRNet: Spatially Guided Radiology Network for Structured Radiological Reporting of Head and Neck Cancer</h5>
+                                    <p class="paper-authors">Gupta, Ayush; Srivastav, Vinkle; Upadhya, Prateek; Gupta, Amit; Rangarajan, Krithika; Padoy, Nicolas</p>
+                                    <p class="paper-affiliations">University of Strasbourg (CNRS, INSERM, ICube) &amp; IHU Strasbourg, FR; IIT Madras (WSAI), IN; AIIMS New Delhi, IN</p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="paper-group">
+                            <h4>Posters</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card" data-paper-id="29">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#29</span></div>
+                                    <h5>DINOv2 for PET: A Pre-Training Domain Benchmark Across Classification, Segmentation, and Prognosis</h5>
+                                    <p class="paper-authors">De Maeyer, Roxanne; Brackenier, Yannick; De Ridder, Vicky; DeKeyser, Simon; Larmuseau, Maarten; Vandemeulebroucke, Jef</p>
+                                    <p class="paper-affiliations">Nuclivision bv, Ghent, BE; Vrije Universiteit Brussel, BE; imec, BE</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="8">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#8</span></div>
+                                    <h5>Performance vs Consistency: Evaluating a Foundation Model in Lung&#8209;RADS Screening</h5>
+                                    <p class="paper-authors">Renoust, Benjamin; Baudot, Pierre; FORIEL, Tiffany; haddou, yousra; Voyton, Charles M; Pierre-Henri, Siot; Geremia, Ezequiel; Francis, Danny; BOURDES, VALERIE; Brisset, Jean-Christophe; Bodard, Sylvain; Huet, Benoit</p>
+                                    <p class="paper-affiliations">Median Technologies (eyonis), FR; The University of Osaka, JP; Universit&eacute; Paris Cit&eacute; / AP-HP, FR</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="30">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#30</span></div>
+                                    <h5>Identity-Preserving Synthetic Dermoscopic Lesion Generation via ABCD Prompting</h5>
+                                    <p class="paper-authors">Do Quang, Tran Dang Khoi, and Nguyen Hang</p>
+                                    <p class="paper-affiliations">Belle.ai, US/FR</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accepted-theme" open>
+                    <summary>
+                        <div>
+                            <span class="theme-number">Theme III</span>
+                            <h3>Computational Pathology, Radiomics and Imaging Biomarkers</h3>
+                        </div>
+                        <span class="theme-paper-count">6 papers</span>
+                    </summary>
+                    <div class="accepted-theme-body">
+                        <p class="theme-description">Whole-slide-image analysis and molecular correlates, quantitative imaging biomarkers, radiogenomics and radiomics&ndash;foundation-model fusion.</p>
+
+                        <div class="paper-group">
+                            <h4>Oral presentations</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card oral-paper" data-paper-id="7">
+                                    <div class="paper-meta"><span class="paper-type">Oral</span><span class="paper-number">#7</span></div>
+                                    <h5>Learning Tissue Interactions for Pathological T-Staging of Rectal Cancer from Whole-Slide Images</h5>
+                                    <p class="paper-authors">Rana, Sezal; Chauhan, Garima Ketan; Sree, M Rahul; SnehaSingh</p>
+                                    <p class="paper-affiliations">Indian Institute of Technology Mandi, IN</p>
+                                </article>
+                                <article class="paper-card oral-paper" data-paper-id="23">
+                                    <div class="paper-meta"><span class="paper-type">Oral</span><span class="paper-number">#23</span></div>
+                                    <h5>Radiomics&ndash;Foundation Fusion for Interpretable RCC Classification: Internal Benchmarking and Exploratory External Transfer</h5>
+                                    <p class="paper-authors">Liang, Yuan; Wang, Fangyijie; Curran, Kathleen M; Silvestre, Guenole C.M.; Bhattacharjee, Sourav; Campbell, Abraham</p>
+                                    <p class="paper-affiliations">University College Dublin, IE; Research Ireland CRT in Machine Learning, IE</p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="paper-group">
+                            <h4>Posters</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card" data-paper-id="33">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#33</span></div>
+                                    <h5>Attention-based prediction of lymph node status in pt1 CRC using a histopathology foundational model</h5>
+                                    <p class="paper-authors">Bach, Nil Aren&oacute;s; Gil, Debora; Cano, Pau; Musulen, Eva; Codera, Pau Folch</p>
+                                    <p class="paper-affiliations">Computer Vision Center, Universitat Aut&ograve;noma de Barcelona, ES; Josep Carreras Institute, ES</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="20">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#20</span></div>
+                                    <h5>Cross-Modal Contrastive Learning for the Retrieval of Immunotherapy-Associated Molecular Signatures from Histopathology</h5>
+                                    <p class="paper-authors">Vila-Bagaria, Sigrid; Mulet, Mar Teixid&oacute;; Pi&ntilde;ol, Miquel; Vilardell, Felip; Montal, Robert; Vilaplana, Veronica</p>
+                                    <p class="paper-affiliations">Universitat Polit&egrave;cnica de Catalunya &ndash; BarcelonaTech, ES; IRB Lleida (GReBiC), ES</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="10">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#10</span></div>
+                                    <h5>Physics-Guided Implicit Neural Representations for Enhanced Quantitative DWI Biomarkers in Pancreatic Cancer</h5>
+                                    <p class="paper-authors">Avidan-Pearl, Nitzan; Link, Daphna; Freiman, Moti; Ogawa, Hiroshi; Yamao, Kentaro; Iida, Tadashi; Takami, Hideki; Iima, Mami</p>
+                                    <p class="paper-affiliations">Technion &ndash; Israel Institute of Technology, IL; Nagoya University Graduate School of Medicine &amp; Hospital, JP</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="34">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#34</span></div>
+                                    <h5>PET/CT Radiogenomic Mutation Prediction in Non-Small Cell Lung Cancer Using Multi-Label Learning</h5>
+                                    <p class="paper-authors">Furukawa, Mona; Hyne, Sai; McGowan, Daniel R; Papiez, Bartlomiej</p>
+                                    <p class="paper-affiliations">University of Oxford, UK; Oxford University Hospitals NHS FT, UK</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accepted-theme" open>
+                    <summary>
+                        <div>
+                            <span class="theme-number">Theme IV</span>
+                            <h3>Prognosis, Treatment Response and Image-Guided Intervention</h3>
+                        </div>
+                        <span class="theme-paper-count">5 papers</span>
+                    </summary>
+                    <div class="accepted-theme-body">
+                        <p class="theme-description">Multimodal prognosis and survival modelling, longitudinal treatment trajectories, and deformable registration supporting image-guided procedures.</p>
+
+                        <div class="paper-group">
+                            <h4>Oral presentations</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card oral-paper" data-paper-id="5">
+                                    <div class="paper-meta"><span class="paper-type">Oral</span><span class="paper-number">#5</span></div>
+                                    <h5>Cross-Center Prototype Learning for Generalizable Multimodal Head-and-Neck Cancer Prognosis</h5>
+                                    <p class="paper-authors">Dunbayeva, Nazira; Khan, Ufaq; Khan, Muhammad Haris; Xu, Min; Razzak, Imran; Xie, Yutong</p>
+                                    <p class="paper-affiliations">Mohamed bin Zayed University of Artificial Intelligence, AE</p>
+                                </article>
+                                <article class="paper-card oral-paper" data-paper-id="16">
+                                    <div class="paper-meta"><span class="paper-type">Oral</span><span class="paper-number">#16</span></div>
+                                    <h5>Task-Guided Deformable Registration for Prostate MRI Analysis</h5>
+                                    <p class="paper-authors">Talukdar, Maruf; Wang, Yipei; Yan, Wen; Thorley, Natasha; Ng, Alexander; Giganti, Francesco; Punwani, Shonit; Emberton, Mark; Kasivisvanathan, Veeru; Hu, Yipeng</p>
+                                    <p class="paper-affiliations">University College London, UK</p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="paper-group">
+                            <h4>Posters</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card" data-paper-id="21">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#21</span></div>
+                                    <h5>Confidence-Aware Multimodal Survival Prediction in Renal Cell Carcinoma using Graph-Based Histopathology Encoding</h5>
+                                    <p class="paper-authors">Shalaby, Mariam Safwat; Abdelmaksoud, Amina I.; Fayed, Salema; Ghatwary, Noha</p>
+                                    <p class="paper-affiliations">Arab Academy for Science and Technology, EG; Newgiza University, EG</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="15">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#15</span></div>
+                                    <h5>TRAIL: Trajectory-Aware Reward Attribution and Inference for Longitudinal Multiple Myeloma Treatment Trajectories</h5>
+                                    <p class="paper-authors">Chen, Tao; Zhou, Chuan; Wang, Yifan; Hadjiiski, Lubomir; Wilms, Matthias</p>
+                                    <p class="paper-affiliations">University of Michigan, Ann Arbor, US</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="40">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#40</span></div>
+                                    <h5>Limited-FOV Liver Deformable Registration via Transformer-Based Point-Cloud Completion</h5>
+                                    <p class="paper-authors">Zhang, Xinyue; O'Connor, Caleb; Woodland, McKell; Castelo, Austin; Paolucci, Iwan; Silva, Jessica Albuquerque Marques; Siddiqi, Noreen Shahid; Prabhugaonkar, Ojas; Odisio, Bruno Calazans; Brock, Kristy</p>
+                                    <p class="paper-affiliations">The University of Texas MD Anderson Cancer Center, US; Rice University, US</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="accepted-theme" open>
+                    <summary>
+                        <div>
+                            <span class="theme-number">Theme V</span>
+                            <h3>Trustworthy and Real-World AI: Robustness, Fairness, Uncertainty and Clinical Evaluation</h3>
+                        </div>
+                        <span class="theme-paper-count">5 papers</span>
+                    </summary>
+                    <div class="accepted-theme-body">
+                        <p class="theme-description">Observer variability and conformal coverage, causal and adversarial probing of clinical covariates, fairness and generalisability, image-quality assessment and federated domain generalisation.</p>
+
+                        <div class="paper-group">
+                            <h4>Posters</h4>
+                            <div class="paper-grid">
+                                <article class="paper-card" data-paper-id="2">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#2</span></div>
+                                    <h5>Evaluating the Effects of Inter-Observer and Model Variability on Radiological Peritoneal Cancer Index Assessment</h5>
+                                    <p class="paper-authors">Saragiotis, Savvas; Gort, Pieter C.; Fleurkens-Ewals, Lotte J.S.; van Herwijnen, Anna F.; Tops-Welten, Marion; Kampmeijer, L.D.; der Sommen, Fons van; Nederend, Joost</p>
+                                    <p class="paper-affiliations">Eindhoven University of Technology, NL; Catharina Hospital Eindhoven, NL; Maastricht University, NL</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="12">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#12</span></div>
+                                    <h5>Causal-Adversarial Probing of Clinical Covariates for Prostate MRI Grading</h5>
+                                    <p class="paper-authors">Wang, Yipei; Huang, Shiqi; Yan, Wen; Yi, Weixi; Barratt, Dean C.; Emberton, Mark; Alexander, Daniel C.; Kasivisvanathan, Veeru; Hu, Yipeng</p>
+                                    <p class="paper-affiliations">University College London (Hawkes Institute), UK; University College London Hospital, UK; Medical University of Vienna, AT</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="11">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#11</span></div>
+                                    <h5>Graph-Refined Probabilistic Mitigation and Fair Reweighing for Enhanced Equity and Generalizability in Prostate MRI Radiomics</h5>
+                                    <p class="paper-authors">Trivizakis, Eleftherios; Pezoulas, Vasileios C.; Tachos, Nikolaos; Tsiknakis, Manolis; Fotiadis, Dimitrios I.; Regge, Daniele; Papanikolaou, Nikos; Marias, Kostas</p>
+                                    <p class="paper-affiliations">FORTH (CBML &amp; BRI), GR; Hellenic Mediterranean University, GR; University of Ioannina, GR; Candiolo Cancer Institute FPO-IRCCS, IT; Champalimaud Foundation, PT</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="22">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#22</span></div>
+                                    <h5>Task-Specific Prostate MRI Quality Assessment via Downstream Performance and Feature-Space Novelty</h5>
+                                    <p class="paper-authors">Long, Yu; Ng, Alexander; Yi, Weixi; Rajwa, Pawel; Thorley, Natasha; Giganti, Francesco; Asif, Aqua; Punwani, Shonit; Kasivisvanathan, Veeru; Hu, Yipeng; Tang, Yucheng</p>
+                                    <p class="paper-affiliations">University College London (Hawkes Institute), UK; UCL Hospitals NHS FT, UK; BURST, UK</p>
+                                </article>
+                                <article class="paper-card" data-paper-id="36">
+                                    <div class="paper-meta"><span class="paper-type">Poster</span><span class="paper-number">#36</span></div>
+                                    <h5>Fed-FGS: Domain-Generalized Federated Polyp Segmentation via Fourier Hard-Thresholding and Gradient Scaling</h5>
+                                    <p class="paper-authors">Gaber, Ahmed; Tawfik, Noha; Fayed, Salema; Ghatwary, Noha</p>
+                                    <p class="paper-affiliations">Arab Academy for Science and Technology, EG</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </details>
             </div>
         </div>
     </section>
